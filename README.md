@@ -5,12 +5,14 @@ This p5.js project displays neon-style text inspired by arcade aesthetics.
 ## 1. Interaction, Animation Approach, and Driver
 - _**How to Interact with the Work**_
     - This project features _**two interaction methods:**_
-        1. **Mouse Click:** triggers background music
+        1. **Mouse Click:** 
+        triggers background music
         ```
         "Click the screen to start the music"
         ```
-        2. **Sound Input:** animates text in response to audio amplitude
-    Clicking anywhere on the canvas starts the background track. Once the music is playing, the title texts _"Pacman" and "* PIET"_ begin to **flicker and glow**. Their brightness is driven by the **live sound input**, creating a reactive neon light effect that synchronizes with the music.
+        2. **Sound Input:** 
+        animates text in response to audio amplitude
+    - Clicking anywhere on the canvas starts the background track. Once the music is playing, the title texts _"Pacman" and "* PIET"_ begin to **flicker and glow**. Their brightness is driven by the **live sound input**, creating a reactive neon light effect that synchronizes with the music.
 
 
 
