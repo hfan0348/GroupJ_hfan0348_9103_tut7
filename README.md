@@ -2,6 +2,19 @@
 
 This p5.js project displays neon-style text inspired by arcade aesthetics.
 
+## 1. Interaction, Animation Approach, and Driver
+- _**How to Interact with the Work**_
+    - Upon loading the page, users will see the prompt:
+    ```
+    "Click the screen to start the music"
+    ```
+    This project features two interaction methods:
+    1. Mouse Click: triggers background music
+    2. Sound Input: animates text in response to audio amplitude
+    Clicking anywhere on the canvas starts the background track. Once the music is playing, the title texts _"Pacman" and "* PIET"_ begin to **flicker and glow**. Their brightness is driven by the **live sound input**, creating a reactive neon light effect that synchronizes with the music.
+
+
+
 ## 1. How to Interact with the Work
 - _**Components of the game**_
     - **Interactive Elements**
@@ -22,7 +35,6 @@ This p5.js project displays neon-style text inspired by arcade aesthetics.
     ```
     Clicking anywhere on the screen triggers background music. Once the music begins, the text elements _"Pacman" and "* PIET"_ respond to the audio input: their brightness and flickering behavior are synchronized with the rhythm and volume of the music. This simulates the dynamic glowing effect of a **retro neon sign.**
 
-
 ## 2. My Individual Approach to Animation
 1. Open `index.html` in a web browser.
 2. Make sure `assets/pixelFont.TTF` is correctly placed.
@@ -30,6 +42,7 @@ This p5.js project displays neon-style text inspired by arcade aesthetics.
 
 ## 3. What Drives My Animation
 Hui Fan — June 2025
+
 ## 4. Inspirations
 ## 5. Technical Explanation
 ## 6. Changes Made to the Group Code
