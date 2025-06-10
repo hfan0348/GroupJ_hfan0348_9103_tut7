@@ -1,10 +1,15 @@
-# Pacman x PIET Neon Dot Text Display
+# Pacman x PIET Neon-style Game Display
 
 This p5.js project displays neon-style text inspired by arcade aesthetics.
 
-## Features
-- Custom pixel font (Galmuri11)
-- Text: “Pacman” and “* PIET”
+## 1. How to Interact with the Work
+- Components of the game
+    - **Interactive part**
+    1. Text: "Pacman" and "* PIET"
+    2. Text: "Click the Screen to start the music"
+    3. Third Item
+    - **Non-interactive part**
+    
 - Yellow neon dot visuals
 - Originally interactive with sound, now simplified as a static glowing effect
 
