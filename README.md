@@ -19,7 +19,7 @@ This p5.js project displays neon-style text inspired by arcade aesthetics.
     ```
     "Click the screen to start the music"
     ```
-    Clicking anywhere on the screen triggers background music. Once the music begins, the text elements **"Pacman" and "* PIET"** respond to the audio input: their brightness and flickering behavior are synchronized with the rhythm and volume of the music. This simulates the dynamic glowing effect of a **retro neon sign.**
+    Clicking anywhere on the screen triggers background music. Once the music begins, the text elements **("Pacman" and "* PIET")** respond to the audio input: their brightness and flickering behavior are synchronized with the rhythm and volume of the music. This simulates the dynamic glowing effect of a **retro neon sign.**
 
 - Originally interactive with sound, now simplified as a static glowing effect
 
