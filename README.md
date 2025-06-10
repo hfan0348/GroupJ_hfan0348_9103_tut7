@@ -3,17 +3,24 @@
 This p5.js project displays neon-style text inspired by arcade aesthetics.
 
 ## 1. How to Interact with the Work
-- Components of the game
-    - **Interactive part**
+- **Components of the game**
+    - **Interactive Elements**
     1. Text: "Pacman" and "* PIET" (individual work)
     2. Text: "Click the Screen to start the music" (individual work)
-    3. The Screen (group work)
+    3. The Game Screen (group work)
 
-    - **Non-interactive part**
-    1. Game console
-    2. Joystick and Buttons
+    - **Non-interactive Elements**
+    1. Game console (visual display only)
+    2. Joystick and Buttons (purely decorative)
     
-- Yellow neon dot visuals
+- **Interaction Design**
+    - This project features two modes of interaction: **mouse click** and **sound input.**
+    Upon loading the page, users are presented with the instruction:
+    ```
+    "Click the screen to start the music"
+    ```
+    Clicking anywhere on the screen triggers background music. Once the music begins, the text elements **"Pacman" and "* PIET")** respond to the audio input: their brightness and flickering behavior are synchronized with the rhythm and volume of the music. This simulates the dynamic glowing effect of a **retro neon sign.**
+
 - Originally interactive with sound, now simplified as a static glowing effect
 
 ## How to Use
