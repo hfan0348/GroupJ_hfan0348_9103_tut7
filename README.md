@@ -4,7 +4,7 @@ This p5.js project displays neon-style text inspired by arcade aesthetics.
 
 ## 1. How to Interact with the Work
 - **Components of the game**
-    - **Interactive Elements**
+    - _**Interactive Elements**_
     1. Text: "Pacman" and "* PIET" (individual work)
     2. Text: "Click the Screen to start the music" (individual work)
     3. Song: 
@@ -14,7 +14,7 @@ This p5.js project displays neon-style text inspired by arcade aesthetics.
     1. Game console (visual display only)
     2. Joystick and Buttons (purely decorative)
     
-- **Interaction Design**
+- _**Interaction Design**_
     - This project features two modes of interaction: **mouse click** and **sound input.**
     Upon loading the page, users are presented with the instruction:
     ```
