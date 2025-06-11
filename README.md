@@ -22,9 +22,9 @@ This p5.js project displays neon-style text inspired by arcade aesthetics.
         3. Responding to audio input instead of mouse movement or time
 
 - _**What Drives My Animation**_
-1. Driver: Audio input (via `p5.FFT`)
-2. Effect: Maps amplitude values to brightness of each text dot
-3. Result: Text pulses in sync with music beats, simulating real-time audio-reactive neon signage
+1. **Driver:** Audio input (via `p5.FFT`)
+2. **Effect:** Maps amplitude values to brightness of each text dot
+3. **Result:** Text pulses in sync with music beats, simulating real-time audio-reactive neon signage
 
 
 - _**Components of the game**_
