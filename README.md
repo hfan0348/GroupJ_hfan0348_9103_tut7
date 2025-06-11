@@ -26,4 +26,9 @@ This p5.js project displays neon-style text inspired by arcade aesthetics.
 2. **Effect:** Maps amplitude values to brightness of each text dot
 3. **Result:** Text pulses in sync with music beats, simulating real-time audio-reactive neon signage
 
-## 2. Visual Inspirations
+## 2. VISUAL INSPIRATIONS
+My visual design is inspired by:
+
+Retro arcade signs and LED dot-matrix displays
+
+Piet Mondrian’s Broadway Boogie Woogie (1942–43), which influenced the structured grid and rhythm of the text animation
