@@ -33,4 +33,10 @@ Inspired by pixel-based displays used in vintage game systems, my text design us
     - [Example of Dot-Matrix LED Text](https://www.instructables.com/Arduino-LED-Display/)
     ![An image of Dot-Matrix LED Text](example1_dot_font.jpg)
 2. Neon Signboard Effect
+The animation effect is influenced by neon shop signs, particularly the kind seen in 1980s diners or city arcades.
+    - [Example of Dot-Matrix LED Text](https://au.pinterest.com/pin/1089660072354104992/)
+    ![An image of Dot-Matrix LED Text](example1_dot_font.jpg)
 3. Arcade Console Interface
+The overall layout, including the static visual elements such as the joystick, buttons, and console frame, is inspired by physical arcade cabinets. These elements serve a purely decorative function but play a key role in immersing the viewer in the arcade atmosphere.
+    - [Example of Arcade Console](https://au.pinterest.com/pin/1089660072354104992/)
+    ![An image of Dot-Matrix LED Text](example2_Arcade_Console.jpg)
