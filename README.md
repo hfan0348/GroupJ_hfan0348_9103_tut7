@@ -40,3 +40,15 @@ The animation effect is influenced by neon shop signs, particularly the kind see
 The overall layout, including the static visual elements such as the joystick, buttons, and console frame, is inspired by physical arcade cabinets. These elements serve a purely decorative function but play a key role in immersing the viewer in the arcade atmosphere.
     - [Example of Arcade Console](https://au.pinterest.com/pin/1089660072354104992/)
     ![An image of Arcade Console](example2_Arcade_Console.jpg)
+
+## 3. CHANGES MADE TO GROUP CODE
+I made several substantial changes to the group’s original code to integrate my interaction-driven neon text animation:
+1. Restored Missing Interaction Logic
+- In the group version, the key interactivity—click-to-start audio and audio-reactive text—had been removed or overwritten. I reimplemented:
+    - A `mousePressed()` function to trigger background music and resume the audio context.
+    - A conditional logic block inside `draw()` that displays an instruction banner ("Click the screen to start the music") at the bottom of the screen before music begins.
+    - An `if (!song.isPlaying())` condition to control this display, ensuring it disappears once the audio starts.
+
+
+
+## 3. TECHNICAL EXPLANATION
