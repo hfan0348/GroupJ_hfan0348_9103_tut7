@@ -65,14 +65,14 @@ push();
     let w2 = random([40, 50, 60]);
 
     let y2= 0;
-     while(y2 < screenSize){
+    while(y2 < screenSize){
       let h2 = random(rectHeights);
       if(y2+h2 > screenSize){
-       h2 = screenSize - y2;
+      h2 = screenSize - y2;
       }
-     layer.fill(random(colors));
-     layer.rect(x2, y2, w2, h2);
-     y2 += h2;
+    layer.fill(random(colors));
+    layer.rect(x2, y2, w2, h2);
+    y2 += h2;
   }
 }
   pop();
@@ -469,3 +469,4 @@ function mousePressed() {
     getAudioContext().resume(); 
   }
 }
+
