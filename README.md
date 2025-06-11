@@ -14,18 +14,20 @@ This p5.js project displays neon-style text inspired by arcade aesthetics.
         animates text in response to audio amplitude
     - Clicking anywhere on the canvas starts the background track. Once the music is playing, the title texts _"Pacman" and "* PIET"_ begin to **flicker and glow**. Their brightness is driven by the **live sound input**, creating a reactive neon light effect that synchronizes with the music.
 
-## 1. My Individual Animation Approach
+## 2. My Individual Animation Approach
+    >My contribution focuses on the text animation, designed to resemble a retro arcade neon sign. I use a dot-matrix typography style rendered with circles instead of 'text()' to gain fine-grained control over visual rhythm. The layout is inspired by arcade aesthetics and Piet Mondrian’s grid compositions.
+This animation is visually distinct from the rest of the project by:
 - _**Components of the game**_
     - **Interactive Elements**
     1. Text: "Pacman" and "* PIET" (individual work)
     2. Text: "Click the Screen to start the music" (individual work)
     3. Song: 
     4. The Game Screen (group work)
-
+    
     - **Non-interactive Elements**
     1. Game console (visual display only)
     2. Joystick and Buttons (purely decorative)
-  
+
 - _**Interaction Design**_
     - This project features two modes of interaction: **mouse click** and **sound input.**
     Upon loading the page, users are presented with the instruction:
