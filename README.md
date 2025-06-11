@@ -31,6 +31,7 @@ The visual language of my individual contribution draws heavily from **retro arc
 1. Dot-Matrix Text
 Inspired by pixel-based displays used in vintage game systems, my text design uses a grid of circular dots to form letters. 
     - [Example of Dot-Matrix LED Text](https://www.instructables.com/Arduino-LED-Display/)
-    ![An image of Dot-Matrix LED Text](example1_dot_font.jpg)
+    
+![An image of Dot-Matrix LED Text](example1_dot_font.jpg)
 2. Neon Signboard Effect
 3. Arcade Console Interface
