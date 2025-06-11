@@ -43,12 +43,21 @@ The overall layout, including the static visual elements such as the joystick, b
 
 ## 3. CHANGES MADE TO GROUP CODE
 I made several substantial changes to the group’s original code to integrate my interaction-driven neon text animation:
-1. Restored Missing Interaction Logic
+1. **Restored Missing Interaction Logic**
 - In the group version, the key interactivity—click-to-start audio and audio-reactive text—had been removed or overwritten. I reimplemented:
     - A `mousePressed()` function to trigger background music and resume the audio context.
     - A conditional logic block inside `draw()` that displays an instruction banner ("Click the screen to start the music") at the bottom of the screen before music begins.
     - An `if (!song.isPlaying())` condition to control this display, ensuring it disappears once the audio starts.
-
-
+2. **Reintegrated Audio-Reactive Text**
+- I reintroduced `p5.Amplitude()` and used `analyser.getLevel()` to drive the brightness of text points.
+- The titles "Pacman" and "* PIET" were converted into vector dot-point arrays via `font.textToPoints()`, and each point is rendered with `ellipse()` and a glowing shadow blur effect.
+- The brightness of these dots dynamically responds to live audio input, creating the illusion of flickering neon.
+3. **Improved Visual Feedback**
+- Added a soft translucent rectangle behind the instruction text to ensure legibility over the complex background.
+- Tuned brightness mapping and `constrain()` values for a more responsive and realistic light flicker synced with audio beats.
+4. **Structural Fixes and Optimizations**
+- Moved `setPaths()` out of the `draw()` loop and placed it in `setup()` to avoid performance issues caused by continuously pushing new paths into the array each frame.
+- Corrected asset paths (e.g., sound file and font file) to ensure they load properly in a browser environment.
+- Organized `draw()` for better logical flow between static visuals, animation layers, and conditional UI prompts.
 
 ## 3. TECHNICAL EXPLANATION
