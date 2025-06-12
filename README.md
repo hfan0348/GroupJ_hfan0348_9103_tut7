@@ -31,15 +31,15 @@ The visual language of my individual contribution draws heavily from **retro arc
 1. Dot-Matrix Text
 Inspired by pixel-based displays used in vintage game systems, my text design uses a grid of circular dots to form letters. 
     - [Example of Dot-Matrix LED Text](https://www.instructables.com/Arduino-LED-Display/)
-    ![An image of Dot-Matrix LED Text](example1_dot_font.jpg)
+    ![An image of Dot-Matrix LED Text](P5_project/assets/example1_dot_font.jpg)
 2. Neon Signboard Effect
 The animation effect is influenced by neon shop signs, particularly the kind seen in 1980s diners or city arcades.
     - [Example of Neon Signboard Effect](https://au.pinterest.com/pin/38843615660942623/)
-    ![An image of Neon Signboard Effect](example3_Neon_Signboard_Effect.gif)
+    ![An image of Neon Signboard Effect](P5_project/assets/example3_Neon_Signboard_Effect.gif)
 3. Arcade Console Interface
 The overall layout, including the static visual elements such as the joystick, buttons, and console frame, is inspired by physical arcade cabinets. These elements serve a purely decorative function but play a key role in immersing the viewer in the arcade atmosphere.
     - [Example of Arcade Console](https://au.pinterest.com/pin/1089660072354104992/)
-    ![An image of Arcade Console](example2_Arcade_Console.jpg)
+    ![An image of Arcade Console](P5_project/assets/example2_Arcade_Console.jpg)
 
 ## 3. CHANGES MADE TO GROUP CODE
 I made several substantial changes to the group’s original code to integrate my interaction-driven neon text animation:

@@ -47,6 +47,7 @@ function setup() {
 
   /**
    * Convert "Pacman" and "*PIET" into point arrays using the pixel font.
+   * The following lines were taken from P5.js examples.
    */
   pointsPacman = pixelFont.textToPoints("Pacman", 130 + offsetX, 70, 100, {
     sampleFactor: 0.12,
@@ -522,6 +523,7 @@ function drawBody(){
  * Step 16: Draw neon-style text using point arrays.
  * Each point in the array is drawn as a glowing yellow dot.
  * Brightness is controlled by the sound volume and passed in as a parameter.
+ * The following lines were taken from ChatGPT.
  */
 function drawNeonText(points, brightness, offsetX = 0, offsetY = 0) {
   for (let pt of points) {
