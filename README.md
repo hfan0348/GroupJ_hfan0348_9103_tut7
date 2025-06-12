@@ -63,7 +63,7 @@ I made several substantial changes to the group’s original code to integrate m
 ## 3. USE OF TOOLS & TECHNIQUES FROM OUTSIDE THE COURSE
 - _**`textToPoints()` from p5.Font**_
     - **Why I used it**
-    I wanted to create a neon sign effect that mimics the look of pixel-based arcade text. To achieve this, I needed to convert the text characters into a set of vector points so I could manually render each character as a collection of glowing circles. This was not achievable using the basic text() function.
+    I wanted to create a **neon sign effect** that mimics the look of **pixel-based arcade text**. To achieve this, I needed to convert the text characters into a set of vector points so I could manually render each character as a collection of glowing circles. This was not achievable using the basic `text()` function.
     - **How it works**
     `textToPoints()` is a function in p5.js that takes a string and converts it into an array of point objects based on the shape of the letters in a loaded font. Each point contains `x` and `y` coordinates, and an optional `sampleFactor` can be used to control the density of the points.
     - **Code Used**
@@ -72,7 +72,7 @@ I made several substantial changes to the group’s original code to integrate m
     pointsPiet = pixelFont.textToPoints("* PIET", 270 + offsetX, 180, 100, { sampleFactor: 0.12 });
     ```
     - **Source**
-    - [p5.js Reference - textToPoints()](https://p5js.org/reference/#/p5.Font/textToPoints)
+    [p5.js Reference - textToPoints()](https://p5js.org/reference/#/p5.Font/textToPoints)
 - _**`drawNeonText()` – Custom Neon Glow Effect**_
 - _**Interactive Volume Response (from Microphone Input)**_
 
