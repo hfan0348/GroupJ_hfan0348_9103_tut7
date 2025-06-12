@@ -150,9 +150,16 @@ I made several substantial changes to the group’s original code to integrate m
         drawNeonText(pointsPiet, brightness);
         ```
 3. _**Images Of The Iteration Process**_
+
     ![an image of the iteration process](P5_project/assets/iteration_process0.png)
+
     ![an image of the iteration process](P5_project/assets/iteration_process1.png)
+
     ![an image of the iteration process](P5_project/assets/iteration_process2.png)
+
     ![an image of the iteration process](P5_project/assets/iteration_process3.png)
+
     ![an image of the iteration process](P5_project/assets/iteration_process4.png)
+
     ![an image of the iteration process](P5_project/assets/iteration_process5.png)
+    
