@@ -60,4 +60,10 @@ I made several substantial changes to the group’s original code to integrate m
 - Corrected asset paths (e.g., sound file and font file) to ensure they load properly in a browser environment.
 - Organized `draw()` for better logical flow between static visuals, animation layers, and conditional UI prompts.
 
-## 3. TECHNICAL EXPLANATION
+## 3. USE OF TOOLS & TECHNIQUES FROM OUTSIDE THE COURSE
+- _**`textToPoints()` from p5.Font**_
+    - Why I used it:
+- _**`drawNeonText()` – Custom Neon Glow Effect**_
+- _**Interactive Volume Response (from Microphone Input)**_
+
+
