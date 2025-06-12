@@ -60,7 +60,7 @@ I made several substantial changes to the group’s original code to integrate m
 - Corrected asset paths (e.g., sound file and font file) to ensure they load properly in a browser environment.
 - Organized `draw()` for better logical flow between static visuals, animation layers, and conditional UI prompts.
 
-## 3. USE OF TOOLS & TECHNIQUES FROM OUTSIDE THE COURSE
+## 4. USE OF TOOLS & TECHNIQUES FROM OUTSIDE THE COURSE
 1. _**`textToPoints()` from p5.Font**_
     - **Why I used it**
         - I wanted to create a **neon sign effect** that mimics the look of **pixel-based arcade text**. To achieve this, I needed to convert the text characters into a set of vector points so I could manually render each character as a collection of glowing circles. This was not achievable using the basic `text()` function.
@@ -98,3 +98,19 @@ I made several substantial changes to the group’s original code to integrate m
     ![an image of AI prompt1.2](AI_prompt1.2.png)
     ![an image of AI prompt1.3](AI_prompt1.3.png)
 
+## 5. MAKING & ITERATION PROCESS
+1.  _**Text Rendering:** From Static Text to Point-Based Custom Control_
+    - Before – Using text() to Render Static Text
+        - **Code Used**
+        ```
+        textFont(pixelFont);
+        textSize(100);
+        text("Pacman", 100, 100);
+        ```
+    - After – Using textToPoints() for Custom Control
+        - **Code Used**
+        ```
+        pointsPacman = pixelFont.textToPoints("Pacman", 130 + offsetX, 70, 100, {
+            sampleFactor: 0.12,
+        });
+        ```
