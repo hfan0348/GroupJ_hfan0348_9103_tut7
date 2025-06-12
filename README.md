@@ -94,9 +94,9 @@ I made several substantial changes to the group’s original code to integrate m
     ```
     - **Source**
         - From ChatGPT
-    ![an image of AI prompt1.1](AI_prompt1.1.png)
-    ![an image of AI prompt1.2](AI_prompt1.2.png)
-    ![an image of AI prompt1.3](AI_prompt1.3.png)
+    ![an image of AI prompt1.1](P5_project/assets/AI_prompt1.1.png)
+    ![an image of AI prompt1.2](P5_project/assets/AI_prompt1.2.png)
+    ![an image of AI prompt1.3](P5_project/assets/AI_prompt1.3.png)
 
 ## 5. MAKING & ITERATION PROCESS (INDIVIDUAL CONTRIBUTION)
 1.  _**Text Rendering:** From Static Text to Point-Based Custom Control_
@@ -149,3 +149,7 @@ I made several substantial changes to the group’s original code to integrate m
         drawNeonText(pointsPacman, brightness);
         drawNeonText(pointsPiet, brightness);
         ```
+3. _**Images Of The Iteration Process**_
+    ![an image of AI prompt1.1](P5_project/assets/AI_prompt1.1.png)
+    ![an image of AI prompt1.2](P5_project/assets/AI_prompt1.2.png)
+    ![an image of AI prompt1.3](P5_project/assets/AI_prompt1.3.png)
