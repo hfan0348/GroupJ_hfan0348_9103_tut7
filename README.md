@@ -81,16 +81,16 @@ I made several substantial changes to the group’s original code to integrate m
     - **Code Used**
     ```
     function drawNeonText(points, brightness, offsetX = 0, offsetY = 0) {
-    for (let pt of points) {
-    fill(255, 255, 0, brightness);
-    drawingContext.shadowBlur = 10;
-    drawingContext.shadowColor = color(255, 255, 0, brightness);
-    ellipse(pt.x + offsetX, pt.y + offsetY, 5);
-    drawingContext.shadowBlur = 0;
-    drawingContext.shadowColor = color(0, 0, 0, 0);
-    noFill();
-  }
-}
+        for (let pt of points) {
+            fill(255, 255, 0, brightness);
+            drawingContext.shadowBlur = 10;
+            drawingContext.shadowColor = color(255, 255, 0, brightness);
+            ellipse(pt.x + offsetX, pt.y + offsetY, 5);
+            drawingContext.shadowBlur = 0;
+            drawingContext.shadowColor = color(0, 0, 0, 0);
+            noFill();
+        }
+    }
     ```
     - **Source**
     Custom implementation based on p5.js capabilities.
