@@ -73,6 +73,16 @@ I made several substantial changes to the group’s original code to integrate m
     ```
     - **Source**
     [p5.js Reference - textToPoints()](https://p5js.org/reference/#/p5.Font/textToPoints)
+        - P5.js example of `textToPoints()` usage:
+    ```
+    // Get the point array.
+    let points = font.textToPoints('p5*js', 6, 60, 35, { sampleFactor:  0.5 });
+
+    // Draw a dot at each point.
+    for (let p of points) {
+        point(p.x, p.y);
+    }
+    ```
 2. _**`drawNeonText()` – Custom Neon Glow Effect**_
     - **Why I used it**
         - To create a **neon glow effect** around the text, I needed a custom function that could render each point with a glowing shadow. This effect is not provided by default in p5.js and required manual control over the rendering process.

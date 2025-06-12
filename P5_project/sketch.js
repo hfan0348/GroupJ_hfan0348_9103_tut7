@@ -545,4 +545,3 @@ function mousePressed() {
     getAudioContext().resume(); // Resume audio context for browser autoplay policy
   }
 }
-
