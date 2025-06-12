@@ -1,3 +1,9 @@
+/**
+ * The following p5.js sketch creates a pixel-based arcade visual inspired by 
+ * classic games and Mondrian-style aesthetics. It responds to audio input and 
+ * dynamically draws characters and typography using points from a custom font.
+ */
+
 let offsetX = -170;
 let offsetY = -400;
 let pixelFont;
@@ -9,28 +15,39 @@ let rectWidths = [40, 50, 60, 70, 80, 90];
 let rectHeights = [30, 40, 50];
 let paths = [];
 let song, analyser;
-
 let layer; 
 
 function preload() {
+  /**
+   * Step 1: Preload assets before the sketch starts. 
+   * We load the custom pixel font and background music here.
+   */
   pixelFont = loadFont("assets/pixelFont.TTF");
   song = loadSound("assets/final_project_music.mp3"); 
 }
 
 function setup() {
+  /**
+   * Step 2: Setup canvas, audio input, and graphical layers.
+   * This includes text point generation and Mondrian-style background drawing.
+   */
   createCanvas(windowWidth, windowHeight);
-  analyser = new p5.Amplitude();
-  analyser.setInput(song);
-  setPaths();
+  analyser = new p5.Amplitude();  // Create amplitude analyzer
+  analyser.setInput(song);        // Connect music input
+  setPaths();                     // Custom function: generate path data (not shown here)
 
   noStroke();
   textAlign(CENTER);
   
+  // Generate point data for pixel text using the loaded font
   push();
   textFont(pixelFont);
   fill(255);
   pixelDensity(2);
 
+  /**
+   * Convert "Pacman" and "*PIET" into point arrays using the pixel font.
+   */
   pointsPacman = pixelFont.textToPoints("Pacman", 130 + offsetX, 70, 100, {
     sampleFactor: 0.12,
   });
@@ -38,8 +55,12 @@ function setup() {
     sampleFactor: 0.12,
   });
   pop();
-  
-push();
+
+  /**
+   * Step 3: Create a Mondrian-style grid for arcade screen background.
+   * We use nested loops to fill the screen with rectangles of different colors.
+   */
+  push();
   layer = createGraphics(screenSize, screenSize);
   layer.stroke(0);
   layer.strokeWeight(4);
@@ -60,6 +81,10 @@ push();
     }
     y += h;
   }
+
+  /**
+   * Step 4: Add vertical blocks to make the pattern more dynamic.
+   */
   for(let i= 0; i<4; i++){
     let x2 = i* (screenSize / 4)+ random(-10, 10);
     let w2 = random([40, 50, 60]);
@@ -79,21 +104,28 @@ push();
 }
 
 function windowResized() {
+  /**
+   * Step 5: Make canvas responsive when the window resizes.
+   */
   resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  background(255, 250, 205);
+  /**
+   * Step 6: Main rendering loop.
+   * We translate and draw the arcade body, screen, pixel paths, and animated elements.
+   */
+  background(255, 250, 205);// Soft yellow background
 
   push();
   translate(width / 2, height / 2);
   translate(offsetX, offsetY);
 
-  drawBody();
-  drawScreen();
-  drawBackground(); 
-  drawPath();
-  drawDots();
+  drawBody();       // Draw arcade cabinet structure
+  drawScreen();     // Draw screen
+  drawBackground(); // Draw background
+  drawPath();       // Animate pixel paths
+  drawDots();       // Display point-based text
 
   drawPixelPacman(138, 486, color(255, 255, 0)); // pacman
   drawPixelGhost(288, 435, color(255, 0, 0)); // red
@@ -102,6 +134,10 @@ function draw() {
   drawPixelGhost(95, 405, color(90, 90, 255)); //purple
 
   pop();
+
+/**
+  * Step 7: Display instruction text if music has not started.
+  */
 if (!song.isPlaying()) {
   fill(255, 255, 255, 150);
   rect(width / 2 - 310, height - 70, 620, 50, 10)
@@ -112,21 +148,32 @@ if (!song.isPlaying()) {
 }
 }
 
+/**
+ * Step 8: Draw the pre-rendered Mondrian-style graphics layer.
+ * This image was created in setup() and is displayed as the background of the screen.
+ */
 function drawBackground() {
   image(layer, 138 + offsetX, 270);
 }
-
+/**
+ * Step 9: Draw the main screen (white rectangle) and dynamic neon text.
+ * We also analyze the current volume level and use it to adjust text brightness.
+ */
 function drawScreen() {
   fill(255, 255, 255);
   rect(138 + offsetX, 270, 400, 400);
-  let volume = analyser.getLevel();
-let brightness = map(volume, 0, 0.05, 80, 255);
-brightness = constrain(brightness, 80, 255);
+  let volume = analyser.getLevel();   // Get sound volume
+let brightness = map(volume, 0, 0.05, 80, 255);   // Map to brightness
+brightness = constrain(brightness, 80, 255);      // Limit range
 
 drawNeonText(pointsPacman, brightness);
 drawNeonText(pointsPiet, brightness);
 }
 
+/**
+ * Step 10: Define maze paths for dots and character movement.
+ * We convert each line from an array format to an object with named coordinates.
+ */
 function setPaths(){
   let originalPaths = [
     // horizon paths
@@ -160,6 +207,10 @@ function setPaths(){
   }
 }
 
+/**
+ * Step 11: Draw bold lines representing the maze path.
+ * We shift the path visually to match screen position.
+ */
 function drawPath(){
   stroke(0);
   strokeWeight(25);
@@ -171,6 +222,10 @@ function drawPath(){
   }
 }
 
+/**
+ * Step 12: Draw small white dots evenly along the path.
+ * These mimic the classic Pac-Man dots and follow the maze layout.
+ */
 function drawDots(){
   let dotSize = 4;
   let dotSpacing = 10;
@@ -195,6 +250,10 @@ function drawDots(){
   }
 }
 
+/**
+ * Step 13: Draw a ghost character in pixel format.
+ * Each ghost has a color and facial details. The pattern is made of pixel values.
+ */
 function drawPixelGhost(x, y, bodyColor) {
   const s = 2; // Pixel block size
   
@@ -224,6 +283,10 @@ function drawPixelGhost(x, y, bodyColor) {
   }
 }
 
+/**
+ * Step 14: Draw the Pac-Man character using pixel art.
+ * The shape includes an open mouth and round yellow body.
+ */
 function drawPixelPacman(x, y, bodyColor) {
   const s = 2;
 
@@ -245,9 +308,9 @@ function drawPixelPacman(x, y, bodyColor) {
   for (let row = 0; row < pixels.length; row++) {
     for (let col = 0; col < pixels[row].length; col++) {
       let val = pixels[row][col];
-      if (val === 1) fill(bodyColor); 
-      else if (val === 2) fill(0);
-      else continue;  
+      if (val === 1) fill(bodyColor);   // Body
+      else if (val === 2) fill(0);      // Mouth
+      else continue;
       rect(x + col * s, y + row * s, s, s);
     }
   }
