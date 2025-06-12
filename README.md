@@ -93,7 +93,8 @@ I made several substantial changes to the group’s original code to integrate m
     }
     ```
     - **Source**
-    Custom implementation based on p5.js capabilities.
-3. _**Interactive Volume Response (from Microphone Input)**_
-
+        - From ChatGPT
+    ![an image of AI prompt1.1](AI_prompt1.1.png)
+    ![an image of AI prompt1.2](AI_prompt1.2.png)
+    ![an image of AI prompt1.3](AI_prompt1.3.png)
 
