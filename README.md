@@ -115,13 +115,13 @@ I made several substantial changes to the group’s original code to integrate m
         });
         ```
 2. _**Neon Effect: From Simple Fill to Realistic Glow**_
-    - Before – Using fill() to Create a Simple Color Fill
+    - Before – Simple Filled Circles Without Glow
         - **Code Used**
         ```
         fill(255, 255, 0);
         ellipse(pt.x, pt.y, 5);
         ```
-    - After – Using Custom Function for Neon Glow Effect
+    - After – Adding Glow with `drawingContext.shadowBlur`
         - **Code Used**
         ```
         function drawNeonText(points, brightness) {
@@ -134,4 +134,18 @@ I made several substantial changes to the group’s original code to integrate m
                 drawingContext.shadowColor = color(0, 0, 0, 0);
             }
         }
+        ```
+3. _**Interactivity: From Static Brightness to Audio-Responsive Light**_
+- Before – Static Brightness (No Interaction)
+        - **Code Used**
+        ```
+        drawNeonText(pointsPacman, 150);
+        ```
+    - After – Brightness Controlled by Microphone Input
+        - **Code Used**
+        ```
+        let vol = mic.getLevel();
+        let brightness = map(vol, 0, 0.3, 30, 255);
+        drawNeonText(pointsPacman, brightness);
+        drawNeonText(pointsPiet, brightness);
         ```
