@@ -161,3 +161,5 @@ I made several substantial changes to the group’s original code to integrate m
 
     ![an image of the iteration process](P5_project/assets/iteration_process4.png)
 
+    ![a video of the iteration process](P5_project/assets/Final_individual_work_Audio.gif)
+
