@@ -136,8 +136,8 @@ I made several substantial changes to the group’s original code to integrate m
         }
         ```
 3. _**Interactivity: From Static Brightness to Audio-Responsive Light**_
-- Before – Static Brightness (No Interaction)
-    - **Code Used**
+    - Before – Static Brightness (No Interaction)
+        - **Code Used**
         ```
         drawNeonText(pointsPacman, 150);
         ```
