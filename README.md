@@ -98,7 +98,7 @@ I made several substantial changes to the group’s original code to integrate m
     ![an image of AI prompt1.2](AI_prompt1.2.png)
     ![an image of AI prompt1.3](AI_prompt1.3.png)
 
-## 5. MAKING & ITERATION PROCESS
+## 5. MAKING & ITERATION PROCESS (INDIVIDUAL CONTRIBUTION)
 1.  _**Text Rendering:** From Static Text to Point-Based Custom Control_
     - Before – Using text() to Render Static Text
         - **Code Used**
