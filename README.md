@@ -98,7 +98,7 @@ I made several substantial changes to the group’s original code to integrate m
     ![an image of AI prompt1.2](P5_project/assets/AI_prompt1.2.png)
     ![an image of AI prompt1.3](P5_project/assets/AI_prompt1.3.png)
 
-## 5. MAKING & ITERATION PROCESS (INDIVIDUAL CONTRIBUTION)
+## 5. MAKING & ITERATION PROCESS (INDIVIDUAL WORK)
 1.  _**Text Rendering:** From Static Text to Point-Based Custom Control_
     - Before – Using text() to Render Static Text
         - **Code Used**
@@ -150,6 +150,9 @@ I made several substantial changes to the group’s original code to integrate m
         drawNeonText(pointsPiet, brightness);
         ```
 3. _**Images Of The Iteration Process**_
-    ![an image of AI prompt1.1](P5_project/assets/AI_prompt1.1.png)
-    ![an image of AI prompt1.2](P5_project/assets/AI_prompt1.2.png)
-    ![an image of AI prompt1.3](P5_project/assets/AI_prompt1.3.png)
+    ![an image of the iteration process](P5_project/assets/iteration_process0.png)
+    ![an image of the iteration process](P5_project/assets/iteration_process1.png)
+    ![an image of the iteration process](P5_project/assets/iteration_process2.png)
+    ![an image of the iteration process](P5_project/assets/iteration_process3.png)
+    ![an image of the iteration process](P5_project/assets/iteration_process4.png)
+    ![an image of the iteration process](P5_project/assets/iteration_process5.png)
