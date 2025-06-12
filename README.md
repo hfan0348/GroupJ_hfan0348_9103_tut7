@@ -114,3 +114,24 @@ I made several substantial changes to the group’s original code to integrate m
             sampleFactor: 0.12,
         });
         ```
+2. _**Neon Effect: From Simple Fill to Realistic Glow**_
+ - Before – Using fill() to Create a Simple Color Fill
+        - **Code Used**
+        ```
+        fill(255, 255, 0);
+        ellipse(pt.x, pt.y, 5);
+        ```
+    - After – Using Custom Function for Neon Glow Effect
+        - **Code Used**
+        ```
+        function drawNeonText(points, brightness) {
+            for (let pt of points) {
+                fill(255, 255, 0, brightness);
+                drawingContext.shadowBlur = 10;
+                drawingContext.shadowColor = color(255, 255, 0, brightness);
+                ellipse(pt.x, pt.y, 5);
+                drawingContext.shadowBlur = 0;
+                drawingContext.shadowColor = color(0, 0, 0, 0);
+            }
+        }
+        ```
