@@ -316,9 +316,13 @@ function drawPixelPacman(x, y, bodyColor) {
   }
 }
 
-
+/**
+ * Step 15: Draw the arcade machine body.
+ * This function constructs the entire arcade cabinet using layered rectangles.
+ * Each color block represents a part of the body.
+ */
 function drawBody(){
-  // black (机身)
+  // black (arcade machine body)
     fill(0, 0, 0);
   rect(78 + offsetX, -30, 520, 220);
   rect(88 + offsetX, 220, 500, 500);
@@ -514,22 +518,31 @@ function drawBody(){
   rect(baseX + 16 * scale, baseY, 8 * scale, 8 * scale); 
 }
 
+/**
+ * Step 16: Draw neon-style text using point arrays.
+ * Each point in the array is drawn as a glowing yellow dot.
+ * Brightness is controlled by the sound volume and passed in as a parameter.
+ */
 function drawNeonText(points, brightness, offsetX = 0, offsetY = 0) {
   for (let pt of points) {
-    fill(255, 255, 0, brightness);
-    drawingContext.shadowBlur = 10;
-    drawingContext.shadowColor = color(255, 255, 0, brightness);
-    ellipse(pt.x + offsetX, pt.y + offsetY, 5);
-    drawingContext.shadowBlur = 0;
-    drawingContext.shadowColor = color(0, 0, 0, 0);
+    fill(255, 255, 0, brightness);    // Yellow with alpha for glow
+    drawingContext.shadowBlur = 10;   // Glow blur effect
+    drawingContext.shadowColor = color(255, 255, 0, brightness);  // Shadow color matches the fill
+    ellipse(pt.x + offsetX, pt.y + offsetY, 5); // Draw each point as a circle
+    drawingContext.shadowBlur = 0;    // Reset shadow blur
+    drawingContext.shadowColor = color(0, 0, 0, 0);   // Reset shadow color
     noFill();
   }
 }
 
+/**
+ * Step 17: Start the background music on mouse press.
+ * If the music is not already playing, it will begin looping.
+ */
 function mousePressed() {
   if (!song.isPlaying()) {
-    song.loop();
-    getAudioContext().resume(); 
+    song.loop();                // Loop the music
+    getAudioContext().resume(); // Resume audio context for browser autoplay policy
   }
 }
 
