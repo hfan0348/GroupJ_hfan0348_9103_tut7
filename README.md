@@ -67,8 +67,6 @@ I made several substantial changes to the group’s original code to integrate m
     - **How it works**
     `textToPoints()` is a function in p5.js that takes a string and converts it into an array of point objects based on the shape of the letters in a loaded font. Each point contains `x` and `y` coordinates, and an optional `sampleFactor` can be used to control the density of the points.
     - **Code Used:**
-    `pointsPacman = pixelFont.textToPoints("Pacman", 130 + offsetX, 70, 100, { sampleFactor: 0.12 });`
-    `pointsPacman = pixelFont.textToPoints("Pacman", 130 + offsetX, 70, 100, { sampleFactor: 0.12 });`
     ```
     pointsPiet = pixelFont.textToPoints("* PIET", 270 + offsetX, 180, 100, { sampleFactor: 0.12 });
     pointsPiet = pixelFont.textToPoints("* PIET", 270 + offsetX, 180, 100, { sampleFactor: 0.12 });
