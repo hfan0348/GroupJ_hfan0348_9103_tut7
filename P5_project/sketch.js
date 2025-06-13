@@ -47,7 +47,7 @@ function setup() {
 
   /**
    * Convert "Pacman" and "*PIET" into point arrays using the pixel font.
-   * The following lines were taken from P5.js examples.
+   * The following lines were taken from P5.js examples: https://p5js.org/reference/p5.Font/textToPoints/
    */
   pointsPacman = pixelFont.textToPoints("Pacman", 130 + offsetX, 70, 100, {
     sampleFactor: 0.12,
